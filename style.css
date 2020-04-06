@@ -1,0 +1,125 @@
+html { 
+    background: url("space.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+    min-height:100%; 
+    position:relative; 
+    padding-bottom:[footer-height] 
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color:#2d8bb1;
+    
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               
+    width: 150px;
+    height: 40;
+    
+    cursor: pointer;            
+    transition: 400ms;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    
+}
+
+.styled:hover {
+    background-color: rgba(0, 68, 255, 0);
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+button {
+    align-items: center;
+    object-position: center;
+    margin-bottom: 50px;
+}
+
+.grid {
+display: grid;
+}
+
+
+
+.grid {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+   
+}
+.item {
+    align-items: center;
+    text-align: center;
+    background-color: #ccc;
+}
+.item.item1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item.item2 {
+    color: #fff;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item.item3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item.item4 {
+    grid-row-start: 3;
+
+}
+
+.fixed-footer{
+    
+    width: 100%;
+
+    position: fixed;        
+
+    background: #333;
+
+    padding: 10px 0;
+
+    color: #fff;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+h1{
+    color:white;    
+}
+
+p, h1{
+text-align: center;
+}
+
+a:hover{
+    text-decoration: none;
+    background: #01203f;
+    color:white;
+}

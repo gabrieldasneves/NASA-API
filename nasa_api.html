@@ -4,124 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA-API</title>
-    <style>
-        body{
-            background: #185066;
-        }
-        .styled {
-            border: 0;
-            line-height: 2.5;
-            
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color:#2d8bb1;
-            
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                        inset -2px -2px 3px rgba(0, 0, 0, .6);
-            
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                       
-            width: 150px;
-            height: 40;
-            
-            cursor: pointer;            
-            transition: 400ms;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 30%;
-            
-        }
-
-        .styled:hover {
-            background-color: rgba(0, 68, 255, 0);
-        }
-
-        .styled:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                        inset 2px 2px 3px rgba(0, 0, 0, .6);
-        }
-        button {
-            align-items: center;
-            position:initial;
-        }
-        .container {
-            opacity: 0.3
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        
-        .item {
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-
-        .item1{
-            height: 100px;
-            width: 100%;
-        }
-
-        .item2{
-            height: 50px;
-            width: 100%;
-            align-items: center;
-        }
-
-        .item3{
-            height: 500px;
-            width: 100%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 
 <body>
-    <div class="container">
-
+    <div  class="grid">
+        
         <div id="output">
-            <div class="item item2" >
-                <h1 id="title">
-    
-                </h1>
-            </div>
-            <div class="item item1" ></div>
+            <div class="item item1" >
                 <thing id="img">
     
                 </thing>
+                
             </div>
-            <div class="item item2" >
+            <div class="item item2" ></div>
+                <h1 id="title">
+        
+                </h1>
+            </div>
+            <div class="item item3" >
                 <p id="copyright">
     
     
                 </p>
             </div>
             
-            <div class="item item3" >
+            <div class="item item4" >
                 <p id="explanation">
         
                 </p>
             </div>
         </div>
-    </div>
-    
+    </div>    
     
 
     <button class="styled" type="button" onclick="showImage()">
         Day image
     </button>
 
-   
+    <footer class="footer">
+        <div class="fixed-footer">
+            <div class="container">
+                <p> &copy; 2020 <a href="https://www.linkedin.com/in/gabriel-alves-das-neves-19009b13b/" target="_blank">G. das Neves</a> </p>
+            </div>        
+        </div>        
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
